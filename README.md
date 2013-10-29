@@ -10,6 +10,11 @@ pull the git from https://github.com/LiSheep/excelsior.git
 npm install excelsior
 ```
 
+##Uninstall
+```bash
+npm uninstall excelsior
+```
+
 ##How to use
 
 In Linux
