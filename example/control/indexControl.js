@@ -1,18 +1,17 @@
 var fs = require('fs');
 
+var docService = require('../service/docService');
 
 //index/index.html
 function indexAction(req, res, view){
-
-	res.writeHead(200);
 	view.getView(res);
-
 }
 
+//index/json
 function jsonAction(req, res, view){
-	res.writeHead(200);
-	var data = {"name":"ltc","age":20};
-	view.getJson(res, data);
+	docService.getAllList(function(data){
+		view.getJson(res, data);
+	});
 }
 
 module.exports.indexAction = indexAction;

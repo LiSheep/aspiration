@@ -19,6 +19,6 @@ var dao = require("../lib/dao");
 // 	console.log(rows);
 // });
 
-dao.count("select count(*) from user where userName = ?",['3'], function(count){
-	console.log(count);
+dao.select("select * from user where userName = ?",['3'], function(result){
+	console.log(result);
 });
