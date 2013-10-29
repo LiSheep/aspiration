@@ -1,5 +1,5 @@
 
-var dao = require('../../lib/dao');
+var dao = require('../../lib/index').dao;
 
 var docDao = {
 	getAllList:_getAllList
