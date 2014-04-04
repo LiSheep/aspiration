@@ -32,6 +32,7 @@ node /your/web/root/app.js
 
 To see the the example in 
 /root/excelsior/example
+本例子提供了一个支持大量下载的node服务
 
 ##To do
 
