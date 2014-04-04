@@ -5,8 +5,8 @@ var docService = require('../service/docService');
 //index/index.html
 //result is the object of router's reuslt(include the control, service, params)
 function indexAction(req, res, view, result){
-	// console.log(result.params);
-	view.getView(res);
+	console.log(result.params);
+	//view.getView(res);
 }
 
 //index/json

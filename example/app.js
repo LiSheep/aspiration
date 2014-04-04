@@ -4,4 +4,6 @@ var excelsior = require('../lib/index');
 
 // var excelsior = require("excelsior");
 
-excelsior.startServer("0",8000, __dirname);
+var port = process.argv[2];
+
+excelsior.startServer("0",port, __dirname);
